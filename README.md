@@ -12,9 +12,9 @@ Requirements
 - numpy 1.11.0  
 ---
 - Windows:  
-    -BGAPI compatible Bluetooth adapter, BLED112
+    - BGAPI compatible Bluetooth adapter, BLED112
 - Linux:  
-    -any Bluetooth 4.0+ adapter  
+    - any Bluetooth 4.0+ adapter  
         (BGAPI compatible adapters can work, with a prime(override))
 - Android:
     - untested as of yet.
