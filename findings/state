@@ -1,0 +1,77 @@
+0000  02 02 20 1b 00 17 00 04 00 1b 12 00 12 35 86 74   .. ..........5.t
+0010  33 33 23 32 12 34 56 78 9a bc 00 00 51 53 51 53   33#2.4Vx....QSQS
+
+in a packet delivered by giiker 
+
+0000  02 02 20 1b 00 17 00 04 00 1b 12 00 (12 35 86 74   .. ..........5.t
+0010  33 33 23 32 12 34 56 78 9a bc 00 0)0 51 53 51 53   33#2.4Vx....QSQS
+
+this area informs of the state of the cube.
+
+
+12 35 86 74 33 33 23 32 12 34 56 78 9a bc 00 0
+
+
+
+the solved cube state can be checked by this string equalling to
+
+12 34 56 78 33 33 33 33 12 34 56 78 9a bc 00 0
+
+
+This data consists of 4 sectors
+
+(12 34 56 78) (33 33 33 33) (12 34 56 78 9a bc) (00 0)
+
+
+This bit defines the permutation of corners
+
+12 34 56 78
+
+each slot in this string corresponds to a slot on a cube
+each number in this string corresponds to a corner piece on a cube
+
+there are 8 slots and numbers going up to 8.
+as there are 8 positions for a corner, and 8 corners.
+
+
+Next bit defines the orientation of corners
+
+33 33 33 33
+
+also 8 slots correspond the same way as permutation
+each slot can take values 1 2 and 3
+just like each corner slot can have a corner piece orientated in one of 3 ways
+
+
+Next bit defines the permutation of edges
+
+12 34 56 78 9a bc
+
+This has 12 slots like 12 edge slots on a cube
+Alos numbers go to 'c' in hex 12.
+Same exact correspondance
+
+
+In this last bit the orientation of edges is cleverly crammed
+
+00 0
+
+Only 3 slots, huh?
+These can take values between 0 and 'f'
+And only after rebasing this hex number into binary it gives
+
+00 00 00 00 00 00
+
+12 slots you have seen enough to know where this is going.
+They now take 0 or 1,
+just like you could have an edge flipped
+the right way 0
+the wrong way 1
+
+
+But knowing that a piece is orientated wrong is a weird point to walk from,
+Especially if the piece in question is currently sitting on a completly different part of the cube.
+
+I understood what they meant with orinetation numbers, but it's impossible to explain that.
+One could study my crappy programmer art to try and grasp it.
+They must've been insane or something

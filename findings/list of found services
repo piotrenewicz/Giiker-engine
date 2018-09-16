@@ -1,0 +1,69 @@
+
+0003	3	Device Name 0000 1010 WriteRead  
+0005	5	Appearance 0000 0010 Read (probably to check if the cube is still around)
+0007	7	Peripheral Preferred Connection Parameters 0000 0010 Read
+000b	11	Manufacturer Name String 0000 0010 Read
+000e	14	Battery Level 0001 0010 NotifyRead (i guess then this is for % left )
+        15  {UUID('00002902-0000-1000-8000-00805f9b34fb')
+0012	18	Unknown 0001 0010 NotifyRead (This is the service informing of cube state)
+        19    UUID('00002902-0000-1000-8000-00805f9b34fb'):
+0016	22	Unknown 0001 0000 Notify cc00008b16ade800000000000000  8b16 - amount of steps done since last reset in hex
+        23  UUID('00002902-0000-1000-8000-00805f9b34fb'):
+0019	25	Unknown:GATT Primary Service Declaration 0000 0100 WritewithoutResponse(very Unknown: pls don't be a DRM)
+001c	28	Nordic DFU Packet 0000 0100 WritewithoutResponse
+001e	30	Nordic DFU Control Point 0001 1000 NotifyWrite
+        31  UUID('00002902-0000-1000-8000-00805f9b34fb')
+0021	33	Unknown:Nordic DFU Service 0000 0010 Read
+
+services of significance:
+0003	3	bytearray(b'GiC75923')                Device Name 0000 1010 WriteRead
+# 0005	5	bytearray(b'\x00\x00')                Appearance 0000 0010 Read (probably to check if the cube is still around)
+# 0007	7	bytearray(b'\x000\x00\x05\x00X\x02')  Peripheral Preferred Connection Parameters 0000 0010 Read
+# 000b	11	bytearray(b'GiCube.Co.Ltd')           Manufacturer Name String 0000 0010 Read
+000e	14	bytearray(b'7')                       Battery Level 0001 0010 NotifyRead (i guess then this is for % left )
+0012	18	                                      Unknown 0001 0010 NotifyRead (This is the service informing of cube state)
+
+#  just check it out
+
+
+
+
+1   0018
+2   0a0300002a
+3   GiC75923
+4   020500012a
+5   0000
+6   020700042a
+7   2000300005005802
+8   0118
+9   0a18
+10   020b00292a
+11   GiCube.Co.Ltd
+12   0f18
+13   120e00192a
+14   7
+15   0000
+16   ۪
+17   121200dcaa
+18   1234567833333333123456789abc000031334143
+19   0000
+20   aaaa
+21   101600abaa
+22   b8a0008b14ade800000000000000
+23   0000
+24   041900acaa
+26   23d1bcea5f782315deef121230150000
+27   041c0023d1bcea5f782315deef121232150000
+29   181e0023d1bcea5f782315deef121231150000
+31   0000
+32   02210023d1bcea5f782315deef121234150000
+33   0100
+
+
+
+      b5430246679de800000000000000
+22    b5430346679de800000000000000
+
+
+b8a10346679de800000000000000
+b8a00346679de800000000000000

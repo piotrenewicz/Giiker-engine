@@ -1,0 +1,38 @@
+0000  02 02 20 1b 00 17 00 04 00 1b 12 00 12 35 86 74   .. ..........5.t
+0010  33 33 23 32 12 34 56 78 9a bc 00 00 51 53 51 53   33#2.4Vx....QSQS
+
+in a packet delivered by giiker 
+
+0000  02 02 20 1b 00 17 00 04 00 1b 12 00 12 35 86 74   .. ..........5.t
+0010  33 33 23 32 12 34 56 78 9a bc 00 00 (51 53 51 53)   33#2.4Vx....QSQS
+
+this area is reserved for 4 past moves done on the cube
+
+it goes
+
+(51 53 51 53)
+ ^  ^  ^  ^
+ 0  1  2  3
+
+0-most recent move
+1-the move before that
+2-so on
+
+with each move a packet is sent and in the next packet values are shifted
+and a new move is added to list.
+
+this is probably being done so that in a situation of lost packet 
+moves can be read into the past, to display the animation correctly.
+
+With such a feature a counter telling which move in a session is being done
+would go hand in hand. 
+
+Exsistence of such counter has NOT been noticed
+
+Furthermore it has been found that for each move
+
+51
+
+5 corresponds to the side of the cube that was turned
+
+1 can take values 1 or 3 stating if the wall was moved clockwise or counterclockwise

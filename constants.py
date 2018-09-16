@@ -1,0 +1,23 @@
+COLOR = dict()
+SIDE = dict()
+
+COLOR["BLUE"] = 1
+COLOR["YELLOW"] = 2
+COLOR["RED"] = 3
+COLOR["WHITE"] = 4
+COLOR["PINK"] = 5
+COLOR["GREEN"] = 6
+
+SIDE[1] = "BLUE"
+SIDE[2] = "YELLOW"
+SIDE[3] = "RED"
+SIDE[4] = "WHITE"
+SIDE[5] = "PINK"
+SIDE[6] = "GREEN"
+
+BLUE = 1
+YELLOW = 2
+RED = 3
+WHITE = 4
+PINK = 5
+GREEN = 6

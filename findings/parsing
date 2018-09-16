@@ -1,0 +1,41 @@
+0000  02 02 20 1b 00 17 00 04 00 1b 12 00 12 54 86 37   .. ..........T.7
+0010  33 12 23 11 12 38 56 4c 9a b7 00 00 33 21 53 21   3.#..8VL....3!S!
+
+
+the packet sent by giiker can be parsed for the following information
+
+0000  (02 02 20 1b 00 17 00 04 00 1b 12) (00) (12 54 86 37   .. ..........T.7
+0010  33 12 23 11 12 38 56 4c 9a b7 00 0)(0) (33 21 53 21)   3.#..8VL....3!S!
+
+
+02 02 20 1b 00 17 00 04 00 1b 12
+
+the reason behind this number is not yet understood, 
+It is ignored when running through a Bluetooth backend
+this is probably added by the GATT protol itself, and therefore useless.
+
+
+00 
+
+this is a delimiter for the next piece of data
+
+
+12 54 86 37 33 12 23 11 12 38 56 4c 9a b7 00 0
+
+the state of the cube is sent there, more on this piece of data is in file state
+
+0
+
+this is another delimiter
+
+33 21 53 21
+
+4 past moves done on cube, more pm this piece of data is in file lastmoves
+
+
+
+
+
+Giiker also sends and accepts other kinds of packets, 
+although they have not been analyzed yet
+

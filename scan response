@@ -1,0 +1,9 @@
+'name': 'GiC75923'
+#'packet_data': 
+#	'scan_response_packet': 
+#	'connectable_advertisement_packet': 
+#		'shortened_local_name': 'GiC75923'
+#		'flags': bytearray(b'\x06') == 06
+#		'manufacturer_specific_data': bytearray(b'\x88\x88\xc5-w\x0c\xad\xe8\x0c#\x00\t') == 8888c52d770cade80c230009
+'address': 'C5:2D:77:0C:AD:E8'
+'rssi': -66
