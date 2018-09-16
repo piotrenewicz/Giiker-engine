@@ -3,7 +3,9 @@ Giiker_engine
 
 is a python module allowing interaction with the ***Xiaomi Mijia Giiker Super Cube***
 
-#Requirements
+Requirements
+======
+
 - Python3.5 (3+ should work, but 3.5 is the only tested)
 - binascii 
 - pygatt 3.2.0
@@ -17,7 +19,9 @@ is a python module allowing interaction with the ***Xiaomi Mijia Giiker Super Cu
 - Android:
     - untested as of yet.
 
-#Features
+Features
+======
+
 - Bluetooth Low Energy communication layer
     - scan for smartcubes
     - connect to and access data on the cube
@@ -34,7 +38,9 @@ is a python module allowing interaction with the ***Xiaomi Mijia Giiker Super Cu
 - Special functions for simplified retrieving and experimenting with ***additional data*.  
      **(data that wasn't reverse engineered and/or implemented into this module)
 
-#Examples
+Examples
+======
+
 - scan for BLE devices
   ```python
   from giiker_engine import *
@@ -74,7 +80,8 @@ is a python module allowing interaction with the ***Xiaomi Mijia Giiker Super Cu
   ``` 
   
   
-#Reference
+Reference
+======
 
 - Iinitialize the Bluetooth capabilities 
     ```python 
@@ -127,22 +134,22 @@ Meant for drawing a selection menu.
         ```python
         def function_name(data):
         ```
-        #######example data="1234567833333333123456789abc000031334143"
+        >example data="1234567833333333123456789abc000031334143"
     - move_callback
         ```python
         def function_name(lastmoves):
         ```
-        #######example lastmoves="31334143"
+        >example lastmoves="31334143"
     - adv_callback
         ```python
         def function_name(data):
         ```
-        #######adv_callback is a special callback for experimenting with *additional data*
+        >adv_callback is a special callback for experimenting with *additional data*
     - inst_callback
         ```python
         def function_name(cube_3Darray):
         ```
-        #######this callback returns a 3x3x3 array of Piece objects
+        >this callback returns a 3x3x3 array of Piece objects
 ---
 - Subscribe to cube events
     ```python
