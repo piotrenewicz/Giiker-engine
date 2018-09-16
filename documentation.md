@@ -1,4 +1,6 @@
-#Giiker_engine
+Giiker_engine  
+======
+
 is a python module allowing interaction with the ***Xiaomi Mijia Giiker Super Cube***
 
 #Requirements
