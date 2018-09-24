@@ -71,7 +71,6 @@ state3D[2][1][1] = Middle[3]
 
 
 def windup():
-    pass
     global state3D
     global stateC
     global stateE  # that's heck weird, but i don't think it can be done any other way i'm going for layers
