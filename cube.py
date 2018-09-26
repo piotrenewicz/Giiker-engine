@@ -144,10 +144,10 @@ def intake(data):
         edge_ornt_i.append(int(item))
 
     for i, item in enumerate(corn_perm_i):
-        stateC[i] = Corners[item]
+        stateC[i] = Corners[item-1]
         stateC[i].orientation = corn_ornt_i[i]
     for i, item in enumerate(edge_perm_i):
-        stateE[i] = Edges[item]
+        stateE[i] = Edges[item-1]
         stateE[i].orientation = edge_ornt_i[i]
 
     windup()
